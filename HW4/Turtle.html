@@ -1,0 +1,153 @@
+<html>
+<head><title>Pictures of my Turtle</title></head>
+<link href='https://fonts.googleapis.com/css?family=Alex Brush' rel='stylesheet'> <!--Imports a Google font-->
+<style>
+    body{
+        min-width: 1200px;
+        margin: 0;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        color:white;
+    }
+    img{
+        border-radius: 25px;
+        border-style: dashed;
+        border-width: 15px;
+        border-color: white;
+    }
+    button{  /*Sets default border style for buttons*/
+        border-style: solid;
+    }
+    #buttonsDiv{  /*CSS for container containing buttons*/
+        margin: 0;
+        text-align:right;  /*Horizontally aligns items to the center*/
+        background-color: rgb(194, 240, 238);  /*Sets background color*/
+        /*Border formatting*/
+        border-style:solid;
+        border-top-width: 0;
+        border-width: thin;
+        border-color: white;
+    }
+    #buttonsDiv p{  /*CSS for paragraph containers in the buttons div container*/
+        /*Alignment formatting*/
+        padding-left:3%;
+        margin:0;
+        margin-top: 1%;
+        vertical-align: 0%;
+        /*Font formatting*/
+        font-family: Alex Brush;
+        font-size: 40px;
+    }
+    #buttonsDiv button{  /*Sets default formatting for all buttons in the buttons container*/
+        /*Alignment formatting*/
+        width:170px;
+        height: 70px;
+        vertical-align: middle; /*Vertically align the buttons to the center*/
+        /*Font formatting*/
+        font-size: 20px;
+        color:white;
+        text-shadow: -1px 0px 1px black, 0px 1px 1px black, 1px 0px 1px black, 0px -1px 1px black;  /*Create text outline*/
+        background-color: rgb(194, 240, 238);/*Sets button color*/
+        border-right-color: rgb(194, 240, 238); /*Removes the right side border*/
+    }
+    h1{
+        height:100px;
+        margin:0;
+        padding-top: 50;
+        text-align: center;
+        text-shadow: 0px 0px 5px black;
+        background-image: url("wood.png");
+    }
+    #gifDiv {
+        height: 600px;
+        text-align: center;
+        font-size: 20px;
+        text-shadow: -1px 0px 1px black, 0px 1px 1px black, 1px 0px 1px black, 0px -1px 1px black;  /*Create text outline*/
+        background-color: rgb(194, 240, 238);
+    }
+    img[src^="turtle2.gif"]{
+        margin-top: 100px;
+    }
+    #picDiv1{
+        height: 300px;
+        padding: 100px;
+        padding-right: 150px;
+        color: rgb(255, 122, 122);
+        font-size: 25px;
+        text-align: right;
+        text-align-last: center; 
+    }
+    #picDiv1 p{
+        padding-top: 100px;
+    }
+    #picDiv1 img{
+        border-color:rgb(255, 122, 122);
+    }
+    #picDiv2{
+        height: 300px;
+        padding: 100px;
+        padding-right: 150px;
+        color: white;
+        font-size: 25px;
+        text-align: left;
+        text-align-last: center; 
+        background-color: rgb(194, 240, 238);
+    }
+    #picDiv2 p{
+        padding-top: 100px;
+        text-shadow: -1px 0px 1px black, 0px 1px 1px black, 1px 0px 1px black, 0px -1px 1px black;  /*Create text outline*/
+    }
+    #vidDiv{
+        height: 650px;
+        text-align: center;
+        font-size: 20px;
+        color: rgb(255, 122, 122);
+    }
+    #vidDiv video{
+        border-radius: 25px;
+        border-style: dashed;
+        border-width: 15px;
+        border-color: rgb(255, 122, 122);
+    }
+</style>
+<body>
+    <div id="buttonsDiv">
+        <p style="float:left;">AH</p>
+        <button id="homeButton" onclick="window.location.href='Main.html';">Home</button>
+        <button id="moreButton"onclick="window.location.href='More.html';">More About Me</button>
+        <button id="turtleButton" onclick="window.location.href='Turtle.html';">Pictures of my Turtle</button>
+        <button id="FAQButton" onclick="window.location.href='FAQ.html';">FAQ</button>
+        <button id="contactButton" onclick="window.location.href='Contact.html'">Contact Me</button>
+    </div>
+    <h1 style="clear: left;">Pictures of My Turtle</h1>
+    <div id="gifDiv">
+        <img src="turtle2.gif" height="300px" width="500px">
+        <p>This is my turtle. <br>He has a pig nose, a veeery long neck, and
+            his shell is flat and soft.<br> He's kind of ugly, isn't he. <br>
+            But you still came to this page to see more of him.
+        </p>
+    </div>
+    <div id="picDiv1">
+        <img src="turtle3.jpg" height="300px" width="400px" style="float: left;">
+        <p>This is what he looks like inside his shell.<br>
+            How horrific.
+        </p>
+    </div>
+    <div id="picDiv2">
+        <img src="turtle4.jpg" height="300px" width="400px" style="float:right;">
+        <p>Look at him on his dumb platform.</p>
+    </div>
+    <div id="picDiv1">
+        <img src="turtle5.jpg" height="300px" width="400px" style="float:left;">
+        <p>Here he is in hamburger mode.</p>
+    </div>
+    <div id="picDiv2">
+        <img src="turtle6.jpg" height="300px" width="400px" style="float:right;">
+        <p>He thinks he's hidden.<br> Ridiculous. Absolutely ridiculous.</p>
+    </div>
+    <div id="vidDiv">
+        <p>And finally, enjoy this video of him not eating his vegetables.</p>
+        <video width="300px" controls autoplay loop muted>
+            <source src="turtleVid.mp4" type="video/mp4"> 
+        </video>
+    </div>
+</body>

@@ -1,0 +1,137 @@
+<html>
+    <head><title>FAQ</title></head>
+    <link href='https://fonts.googleapis.com/css?family=Alex Brush' rel='stylesheet'> <!--Imports a Google font-->
+    <style>
+    body{
+        min-width: 1200px;
+        margin: 0;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: white;
+    }
+    button{  /*Sets default border style for buttons*/
+        border-style: solid;
+    }
+    #buttonsDiv{  /*CSS for container containing buttons*/
+        margin: 0;
+        text-align:right;  /*Horizontally aligns items to the center*/
+        background-color: rgb(194, 240, 238);  /*Sets background color*/
+        /*Border formatting*/
+        border-style:solid;
+        border-top-width: 0;
+        border-width: thin;
+        border-color: white;
+    }
+    #buttonsDiv p{  /*CSS for paragraph containers in the buttons div container*/
+        /*Alignment formatting*/
+        padding-left:3%;
+        margin:0;
+        margin-top: 1%;
+        vertical-align: 0%;
+        /*Font formatting*/
+        font-family: Alex Brush;
+        font-size: 40px;
+    }
+    #buttonsDiv button{  /*Sets default formatting for all buttons in the buttons container*/
+        /*Alignment formatting*/
+        width:170px;
+        height: 70px;
+        vertical-align: middle; /*Vertically align the buttons to the center*/
+        /*Font formatting*/
+        font-size: 20px;
+        color:white;
+        text-shadow: -1px 0px 1px black, 0px 1px 1px black, 1px 0px 1px black, 0px -1px 1px black;  /*Create text outline*/
+        
+        background-color: rgb(194, 240, 238);/*Sets button color*/
+    
+        border-right-color: rgb(194, 240, 238); /*Removes the right side border*/
+    }
+    h1{
+        height:100px;
+        margin:0;
+        padding-top: 50;
+        text-align: center;
+        text-shadow: 0px 0px 5px black;
+        background-image: url("wood.png");
+    }
+    #QADiv{
+        width:60%;
+        margin: 30px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 30px;
+        color: rgb(255, 122, 122);
+        border-style: double;
+        border-color: rgb(194, 240, 238);
+        border-width: 20;
+    }
+    #Q{
+        display: inline;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 50;
+        color:rgb(255, 55, 55)
+    }
+    #A{
+        display: inline;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 50;
+        color:rgb(55, 192, 255)
+    }
+    #Questions{
+        display: inline;
+        font-size: 25;
+    }
+    #Answers{
+        display: inline;
+        font-size: 20;
+    }
+    </style>
+<body>
+    <div id="buttonsDiv">
+        <p style="float:left;">AH</p>
+        <button id="homeButton" onclick="window.location.href='Main.html';">Home</button>
+        <button id="moreButton"onclick="window.location.href='More.html';">More About Me</button>
+        <button id="turtleButton" onclick="window.location.href='Turtle.html';">Pictures of my Turtle</button>
+        <button id="FAQButton" onclick="window.location.href='FAQ.html';">FAQ</button>
+        <button id="contactButton" onclick="window.location.href='Contact.html'">Contact Me</button>
+    </div>
+    <h1 style="clear: left">Frequently Asked Questions</h1>
+    <div id="QADiv">
+        <p id="Q">Q.</p>
+        <p id="Questions">What's your favorite color?</p>
+        <p id="A"><br>A.</p>
+        <p id="Answers">I don't really know, there's so many colors out there<br></p>
+        <p id="Q"><br>Q.</p>
+        <p id="Questions">What's your favorite food?</p>
+        <p id="A"><br>A.</p>
+        <p id="Answers">Boba tea is pretty good<br></p>
+        <p id="Q"><br>Q.</p>
+        <p id="Questions">What's your favorite number?</p>
+        <p id="A"><br>A.</p>
+        <p id="Answers">It's between 1-100<br></p>
+        <p id="Q"><br>Q.</p>
+        <p id="Questions">Where were you born?</p>
+        <p id="A"><br>A.</p>
+        <p id="Answers">Chicago<br></p>
+        <p id="Q"><br>Q.</p>
+        <p id="Questions">How tall are you?</p>
+        <p id="A"><br>A.</p>
+        <p id="Answers">5'7<br></p>
+        <p id="Q"><br>Q.</p>
+        <p id="Questions">You're pretty tall for an Asian chick, huh?</p>
+        <p id="A"><br>A.</p>
+        <p id="Answers">I mean...I guess<br></p>
+        <p id="Q"><br>Q.</p>
+        <p id="Questions">What kind of Asian are you?</p>
+        <p id="A"><br>A.</p>
+        <p id="Answers">The Asian kind<br></p>
+        <p id="Q"><br>Q.</p>
+        <p id="Questions">No, but like, what part of Asia are you from?</p>
+        <p id="A"><br>A.</p>
+        <p id="Answers">Well...I said I was born in Chicago<br></p>
+        <p id="Q"><br>Q.</p>
+        <p id="Questions">C'mon, just tell me what your ethnicity is</p>
+        <p id="A"><br>A.</p>
+        <p id="Answers">Asian<br></p>
+    </div>
+</body>
+</html>
