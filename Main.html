@@ -1,0 +1,154 @@
+<html>
+    <head><title>Main</title></head> <!--Set page title-->
+    <link href='https://fonts.googleapis.com/css?family=Alex Brush' rel='stylesheet'> <!--Imports a Google font-->
+<!--CSS-->
+<style>
+    body{ /*Sets default background color*/
+        min-width: 100%;
+        margin: 0;
+        padding: 0;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        background-color: white;
+        color: white;
+    }
+    button{  /*Sets default border style for buttons*/
+        border-style: solid;
+    }
+    #buttonsDiv{  /*CSS for container containing buttons*/
+        margin: 0;
+        text-align:right;  /*Horizontally aligns items to the center*/
+        background-color: rgb(194, 240, 238);  /*Sets background color*/
+        /*Border formatting*/
+        border-style:solid;
+        border-top-width: 0;
+        border-width: thin;
+        border-color: white;
+    }
+    #buttonsDiv p{  /*CSS for paragraph containers in the buttons div container*/
+        /*Alignment formatting*/
+        padding-left:3%;
+        margin:0;
+        margin-top: 1%;
+        vertical-align: 0%;
+        /*Font formatting*/
+        font-family: Alex Brush;
+        font-size: 40px;
+    }
+    #buttonsDiv button{  /*Sets default formatting for all buttons in the buttons container*/
+        /*Alignment formatting*/
+        width:170px;
+        height: 70px;
+        vertical-align: middle; /*Vertically align the buttons to the center*/
+        /*Font formatting*/
+        font-size: 20px;
+        color:white;
+        text-shadow: -1px 0px 1px black, 0px 1px 1px black, 1px 0px 1px black, 0px -1px 1px black;  /*Create text outline*/
+        
+        background-color: rgb(194, 240, 238);/*Sets button color*/
+    
+        border-right-color: rgb(194, 240, 238); /*Removes the right side border*/
+    }
+    h1{  /*CSS for portrait banner*/
+        height: 450px;
+        /*Alignment formatting*/
+        margin-top:0;
+        text-align: center;
+        /*background formatting*/
+        background-image: url("Wood2.jpg");  /*Set the background image to Wood2.jpg*/
+        background-size:1500px;
+        background-repeat: no-repeat;   /*Ensure that the background image won't repeat*/
+        resize: horizontal;
+    }
+    img[src^="portrait.jpg"]{ /*CSS for portrait image*/
+        margin-top: 70px;
+        /*Border formatting*/
+        border-radius: 25px;   /*Creates a rounded border*/
+        border-style: solid;
+        border-color: white;
+        box-shadow: 2px 2px 10px black;  /*Create a shadow behind the image*/
+    }
+    #Name{   /*CSS for name text in title banner*/
+        text-shadow: 0px 0px 10px black;  /*Create a shadow behind the text*/
+    }
+    #IGButton{  /*CSS for Instagram button*/
+        width:40px;
+        height:40px;
+        background-image: url(IG.png);
+        background-size: cover;
+        border-radius: 8px;
+        box-shadow: 0 0 5px black;
+    }
+    #LIButton{  /*CSS for LinkedIn button*/
+        width:40px;
+        height:40px;
+        background-image: url(Linkedin.jpg);
+        background-size: cover;
+        border-radius: 8px;
+        box-shadow: 0 0 5px black;
+    }
+    h2{   /*CSS for "About Me" container*/
+        height: max-content;
+        width: 90%;
+        /*Alignment formatting*/
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 20px;
+        padding-left: 40px;
+        /*background formatting*/
+        background-color: rgb(194, 240, 238);
+        border-style: double;
+        border-color: white;
+        border-width:30px;
+    }
+    h2 p{  /*Sets default formatting for paragraph containers in the "About Me" section*/
+        font-size: 30px;
+        text-shadow: -1px 0px 1px black, 0px 1px 1px black, 1px 0px 1px black, 0px -1px 1px black;  /*Create outline around text*/
+    }
+    h2 li{  /*Sets default formatting for list items in the "About Me" section*/
+        /*Alignment formatting*/
+        margin-left: 40px;
+        margin-top: 40px;
+        /*Font formatting*/
+        font-size: 23px;
+        text-shadow: -1px 0px 1px black, 0px 1px 1px black, 1px 0px 1px black, 0px -1px 1px black;
+    }
+    img[src^="turtle.jpg"]{  /*CSS for turtle image in the "About Me" section*/
+        margin-right: 150px;
+        border-style: dashed;
+        border-color: white;
+        border-width: 10;
+    }
+</style>
+<!--End of CSS-->
+<!--HTML-->
+<body>
+    <div id="buttonsDiv">
+        <p style="float:left;">AH</p>
+        <button id="homeButton" onclick="window.location.href='Main.html';">Home</button>
+        <button id="moreButton"onclick="window.location.href='More.html';">More About Me</button>
+        <button id="turtleButton" onclick="window.location.href='Turtle.html';">Pictures of my Turtle</button>
+        <button id="FAQButton" onclick="window.location.href='FAQ.html';">FAQ</button>
+        <button id="contactButton" onclick="window.location.href='Contact.html'">Contact Me</button>
+    </div>
+    <h1 style="clear: left;"> 
+        <img src="portrait.jpg" width="200px" height="200px">
+        <p id="Name">Amy Huang</p>
+
+        <button id="IGButton" onclick="window.open('https://www.instagram.com/its_a_me_amy/');"></button>
+        <button id="LIButton" onclick="window.open('https://www.linkedin.com/in/amy-huang-788b80171/');"></button>
+    </h1>
+    <h2>
+        <p id="aboutMeP">A Little Bit About Me...</p>
+        <img src="turtle.jpg" style="float:right" width="300px" height="300px">
+        <p id="aboutMeP2">
+            <li>Born and raised in Chicago</li>
+            <li>Studying for a Master's in MIS at UIC</li>
+            <li>Work two part time jobs</li>
+            <li>Can barely cook</li>
+            <li>Own an ugly turtle</li>
+        </p>
+    </h2>
+    
+</body>
+</html>
+        

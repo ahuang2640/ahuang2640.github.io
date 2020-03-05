@@ -1,0 +1,83 @@
+<html>
+    <head><title>More About Me</title></head>
+    <link href='https://fonts.googleapis.com/css?family=Alex Brush' rel='stylesheet'> <!--Imports a Google font-->
+    <style>
+    body{
+        min-width: 1200px;
+        margin: 0;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: white;
+    }
+    button{  /*Sets default border style for buttons*/
+        border-style: solid;
+    }
+    #buttonsDiv{  /*CSS for container containing buttons*/
+        margin: 0;
+        text-align:right;  /*Horizontally aligns items to the center*/
+        background-color: rgb(194, 240, 238);  /*Sets background color*/
+        /*Border formatting*/
+        border-style:solid;
+        border-top-width: 0;
+        border-width: thin;
+        border-color: white;
+    }
+    #buttonsDiv p{  /*CSS for paragraph containers in the buttons div container*/
+        /*Alignment formatting*/
+        padding-left:3%;
+        margin:0;
+        margin-top: 1%;
+        vertical-align: 0%;
+        /*Font formatting*/
+        font-family: Alex Brush;
+        font-size: 40px;
+    }
+    #buttonsDiv button{  /*Sets default formatting for all buttons in the buttons container*/
+        /*Alignment formatting*/
+        width:170px;
+        height: 70px;
+        vertical-align: middle; /*Vertically align the buttons to the center*/
+        /*Font formatting*/
+        font-size: 20px;
+        color:white;
+        text-shadow: -1px 0px 1px black, 0px 1px 1px black, 1px 0px 1px black, 0px -1px 1px black;  /*Create text outline*/
+        background-color: rgb(194, 240, 238);/*Sets button color*/
+        border-right-color: rgb(194, 240, 238); /*Removes the right side border*/
+    }
+    h1{
+        height:100px;
+        margin:0;
+        padding-top: 50px;
+        text-align: center;
+        text-shadow: 0px 0px 5px black;
+        background-image: url("wood.png");
+    }
+    #picDiv{
+        width: 30%;
+        padding: 100px;
+        margin-left: 50px;
+    }
+    #textDiv{
+        height: 100%;
+        width: 35%;
+        padding: 100px;
+        background-color: rgb(194, 240, 238);
+    }
+    </style>
+<body>
+    <div id="buttonsDiv">
+        <p style="float:left;">AH</p>
+        <button id="homeButton" onclick="window.location.href='Main.html';">Home</button>
+        <button id="moreButton"onclick="window.location.href='More.html';">More About Me</button>
+        <button id="turtleButton" onclick="window.location.href='Turtle.html';">Pictures of my Turtle</button>
+        <button id="FAQButton" onclick="window.location.href='FAQ.html';">FAQ</button>
+        <button id="contactButton" onclick="window.location.href='Contact.html'">Contact Me</button>
+    </div>
+    <h1 style="clear: left">More About Me</h1>
+    <div id="picDiv" style="float:left">
+        <img src="Me.jpg" height="600px" width="370px">
+    </div>
+    <div id="textDiv" style="float: right;">
+        <p>fasjfckn</p>
+    </div>
+</body>
+</html>
